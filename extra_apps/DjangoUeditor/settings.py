@@ -180,6 +180,17 @@ UEditorUploadSettings = {
     ]  # 列出的文件类型 */
 }
 
+# 数据库配置
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'demo',
+        'USER': 'root',
+        'PASSWORD': 'root',
+        'HOST': '192.168.3.101',
+        'PORT': '3306',
+    }
+}
 
 # 修改前的
 # 更新配置：从用户配置文件settings.py重新读入配置UEDITOR_SETTINGS,覆盖默认
